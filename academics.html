@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - Curriculum & Pedagogy | Mount Litera Zee School</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/academics.css">
+</head>
+<body>
+
+    <!-- 1. LOADING PAGE (PRELOADER) -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <h1>Preparing Academic Journey...</h1>
+        </div>
+    </div>
+
+    <!-- 2. MAIN PAGE CONTENT -->
+    <div id="main-content" class="hidden">
+        
+        <!-- HEADER / NAVIGATION -->
+        <header>
+            <div class="logo">Mount Litera Zee School</div>
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-item"><i class="fas fa-home"></i> Home</a>
+                <a href="academics.html" class="nav-item" style="color:var(--primary-color);"><i class="fas fa-book-open"></i> Academics</a>
+                <a href="admissions.html" class="nav-item"><i class="fas fa-user-graduate"></i> Admissions</a>
+                <a href="news.html" class="nav-item"><i class="fas fa-bullhorn"></i> News</a>
+                <a href="contact.html" class="nav-item"><i class="fas fa-map-marker-alt"></i> Contact Us</a>
+            </nav>
+            <!-- Mobile Menu Toggle Button -->
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </header>
+        
+        <!-- Mobile Navigation Overlay -->
+        <div class="mobile-nav-overlay" id="mobileNav">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="academics.html" style="color:var(--primary-color);"><i class="fas fa-book-open"></i> Academics</a>
+            <a href="admissions.html"><i class="fas fa-user-graduate"></i> Admissions</a>
+            <a href="news.html"><i class="fas fa-bullhorn"></i> News</a>
+            <a href="contact.html"><i class="fas fa-map-marker-alt"></i> Contact Us</a>
+        </div>
+
+
+        <!-- HERO SECTION (Academics Page Specific) -->
+        <section class="academics-hero-section">
+            <span class="section-tag" style="color: var(--text-accent);">Our Philosophy of Learning</span>
+            <h1 class="hero-title">Innovative Curriculum. Personalized Growth.</h1>
+            <p class="hero-subtitle">We follow a dynamic, research-based curriculum designed for holistic development and future readiness.</p>
+        </section>
+
+        <!-- SECTION 1: CURRICULUM OVERVIEW -->
+        <section style="background-color: var(--surface-dark);">
+            <span class="section-tag">Academic Stages</span>
+            <h2>Our Grade-Wise Learning Path</h2>
+            
+            <div class="curriculum-grid">
+
+                <!-- Stage 2: Primary -->
+                <div class="curriculum-card">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <h3>Primary School (Grades 1-5)</h3>
+                    <p>Building strong fundamentals in Mathematics, Sciences, and Languages. Emphasis on creative expression and critical thinking through projects and discovery learning.</p>
+                </div>
+
+                <!-- Stage 3: Middle School -->
+                <div class="curriculum-card">
+                    <i class="fas fa-microscope"></i>
+                    <h3>Middle School (Grades 6-8)</h3>
+                    <p>Exploration of specialized subjects like Physics, Chemistry, and History. Fostering independence, research skills, and preparation for rigorous senior years.</p>
+                </div>
+                
+                <!-- Stage 4: Secondary -->
+                <div class="curriculum-card">
+                    <i class="fas fa-globe-asia"></i>
+                    <h3>Secondary School (Grades 9-12)</h3>
+                    <p>In-depth subject study with board examination focus. Career counseling, college readiness, and advanced co-curricular opportunities.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: PEDAGOGY & METHODOLOGY -->
+        <section style="background-color: var(--background-dark);">
+            <span class="section-tag">The MLZS Advantage</span>
+            <h2>Our Signature Pedagogy</h2>
+            
+            <div class="pedagogy-container">
+                
+                <div class="pedagogy-image">
+                    <img src="img/padagogy.png" alt="Diagram showing the four pillars of teaching." style="height: 300px;">
+                </div>
+                
+                <div class="pedagogy-text">
+                    <h3>The 'LITERA' Learning Approach</h3>
+                    <p>Our core teaching philosophy, L.I.T.E.R.A., stands for the five pillars of education we employ to engage and nurture every student:</p>
+                    <ul class="pedagogy-list">
+                        <li><i class="fas fa-lightbulb"></i> **Learner-Centric:** Focusing on the individual needs and pace of each student.</li>
+                        <li><i class="fas fa-users"></i> **Interactive:** Promoting collaboration, dialogue, and group problem-solving.</li>
+                        <li><i class="fas fa-brain"></i> **Thinking Skills:** Integrating critical thinking, analysis, and application into daily lessons.</li>
+                        <li><i class="fas fa-laptop-house"></i> **Experiential:** Learning by doing through labs, projects, and real-world simulations.</li>
+                        <li><i class="fas fa-leaf"></i> **Rigor & Relevance:** Ensuring the curriculum is challenging yet applicable to the students' future lives and careers.</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2024 Mount Litera Zee School. All rights reserved. | Developed with <i class="fas fa-heart"></i></p>
+        </footer>
+
+    </div>
+
+    <script src="js/academics.js"></script>
+
+</body>
+</html>

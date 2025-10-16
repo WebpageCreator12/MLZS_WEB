@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Events - Announcements and Achievements | Mount Litera Zee School</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/news.css">
+</head>
+<body>
+
+    <!-- 1. LOADING PAGE (PRELOADER) -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <h1>Gathering Latest News...</h1>
+        </div>
+    </div>
+
+    <!-- 2. MAIN PAGE CONTENT -->
+    <div id="main-content" class="hidden">
+        
+        <!-- HEADER / NAVIGATION -->
+        <header>
+            <div class="logo">Mount Litera Zee School</div>
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-item"><i class="fas fa-home"></i> Home</a>
+                <a href="academics.html" class="nav-item"><i class="fas fa-book-open"></i> Academics</a>
+                <a href="admissions.html" class="nav-item"><i class="fas fa-user-graduate"></i> Admissions</a>
+                <a href="news.html" class="nav-item" style="color:var(--primary-color);"><i class="fas fa-bullhorn"></i> News</a>
+                <a href="contact.html" class="nav-item"><i class="fas fa-map-marker-alt"></i> Contact Us</a>
+            </nav>
+            <!-- Mobile Menu Toggle Button -->
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </header>
+        
+        <!-- Mobile Navigation Overlay -->
+        <div class="mobile-nav-overlay" id="mobileNav">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="academics.html"><i class="fas fa-book-open"></i> Academics</a>
+            <a href="admissions.html"><i class="fas fa-user-graduate"></i> Admissions</a>
+            <a href="news.html" style="color:var(--primary-color);"><i class="fas fa-bullhorn"></i> News</a>
+            <a href="contact.html"><i class="fas fa-map-marker-alt"></i> Contact Us</a>
+        </div>
+
+
+        <!-- HERO SECTION (News Page Specific) -->
+        <section class="news-hero-section">
+            <span class="section-tag" style="color: var(--text-accent);">Stay Connected</span>
+            <h1 class="hero-title">School News & Community Updates</h1>
+            <p class="hero-subtitle">Catch up on the latest happenings, student achievements, and important announcements from the MLZS community.</p>
+        </section>
+
+        <!-- SECTION 1: NEWS GRID -->
+        <section style="background-color: var(--background-dark);">
+            <span class="section-tag">Recent Highlights</span>
+            <h2>Our Stories: Events, Achievements, and Announcements</h2>
+            
+            <div class="news-grid">
+                
+                <!-- News Card 1: Achievement -->
+                <a href="#" class="news-card">
+                    <div class="card-image-placeholder">Student Achievement Image Placeholder</div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <span class="card-date"><i class="fas fa-calendar-alt"></i> October 15, 2024</span>
+                            <span class="card-tag" style="background-color: #008080;">Achievement</span>
+                        </div>
+                        <h3>Grade 10 Student Wins National Science Olympiad</h3>
+                        <p>A phenomenal performance by our Grade 10 student, Aarav Sharma, who secured the first position in the highly competitive National Science Olympiad.</p>
+                        <span class="read-more">Read Full Story <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- News Card 2: Event -->
+                <a href="#" class="news-card">
+                    <div class="card-image-placeholder">Annual Sports Day Image Placeholder</div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <span class="card-date"><i class="fas fa-calendar-alt"></i> October 10, 2024</span>
+                            <span class="card-tag" style="background-color: #FF5733;">Event Report</span>
+                        </div>
+                        <h3>Annual Sports Day: Fostering Spirit and Teamwork</h3>
+                        <p>Recap of our spectacular Annual Sports Day, filled with exhilarating races, spirited cheers, and new school records set across various disciplines.</p>
+                        <span class="read-more">View Photo Gallery <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- News Card 3: Announcement -->
+                <a href="#" class="news-card">
+                    <div class="card-image-placeholder">Parent-Teacher Meeting Notice</div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <span class="card-date"><i class="fas fa-calendar-alt"></i> September 28, 2024</span>
+                            <span class="card-tag" style="background-color: #3A8EEB;">Announcement</span>
+                        </div>
+                        <h3>Mandatory Parent-Teacher Meeting Scheduled</h3>
+                        <p>Important notice for all parents: the PTM for the first term review is scheduled for November 5th. Please check your emails for booking slots.</p>
+                        <span class="read-more">See Details <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                
+                <!-- News Card 4: Community -->
+                <a href="#" class="news-card">
+                    <div class="card-image-placeholder">Community Service Photo Placeholder</div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <span class="card-date"><i class="fas fa-calendar-alt"></i> September 20, 2024</span>
+                            <span class="card-tag" style="background-color: #8A2BE2;">Community</span>
+                        </div>
+                        <h3>Clean-Up Drive Success: Students Give Back</h3>
+                        <p>Our students participated in a local community clean-up initiative, demonstrating dedication to civic responsibility and environmental stewardship.</p>
+                        <span class="read-more">See Impact <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                
+                <!-- News Card 5: Academic -->
+                <a href="#" class="news-card">
+                    <div class="card-image-placeholder">Library Update Image Placeholder</div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <span class="card-date"><i class="fas fa-calendar-alt"></i> September 12, 2024</span>
+                            <span class="card-tag" style="background-color: #D2B48C;">Academic</span>
+                        </div>
+                        <h3>New Digital Library Resources Now Available</h3>
+                        <p>Exciting news for our secondary students! The school has integrated thousands of new e-books and research journals into our digital library portal.</p>
+                        <span class="read-more">Access Portal <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- News Card 6: Arts -->
+                <a href="#" class="news-card">
+                    <div class="card-image-placeholder">School Play Photo Placeholder</div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <span class="card-date"><i class="fas fa-calendar-alt"></i> August 30, 2024</span>
+                            <span class="card-tag" style="background-color: #FFD700; color: #1E1E1E;">Arts & Culture</span>
+                        </div>
+                        <h3>A Midsummer Night's Dream: Theatre Review</h3>
+                        <p>The Drama Club delivered a spectacular rendition of Shakespeare’s classic, receiving standing ovations for their dedication and stage presence.</p>
+                        <span class="read-more">Read Critics Review <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                
+            </div>
+            
+            <div style="text-align: center; margin-top: 60px;">
+                <button style="background: var(--primary-color); color: var(--background-dark); border: none; padding: 15px 40px; border-radius: 8px; font-weight: 700; font-size: 1.1em; cursor: pointer; transition: opacity 0.3s;">
+                    Load More News <i class="fas fa-redo-alt"></i>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2024 Mount Litera Zee School. All rights reserved. | Developed with <i class="fas fa-heart"></i></p>
+        </footer>
+
+    </div>
+
+    <script src="js/news.js"></script>
+</body>
+</html>

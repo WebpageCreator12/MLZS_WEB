@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Get in Touch | Mount Litera Zee School</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+    <!-- 1. LOADING PAGE (PRELOADER) -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <h1>Loading Contact Information...</h1>
+        </div>
+    </div>
+
+    <!-- 2. MAIN PAGE CONTENT -->
+    <div id="main-content" class="hidden">
+        
+        <!-- HEADER / NAVIGATION -->
+        <header>
+            <div class="logo">Mount Litera Zee School</div>
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-item"><i class="fas fa-home"></i> Home</a>
+                <a href="academics.html" class="nav-item"><i class="fas fa-book-open"></i> Academics</a>
+                <a href="admissions.html" class="nav-item"><i class="fas fa-user-graduate"></i> Admissions</a>
+                <a href="news.html" class="nav-item"><i class="fas fa-bullhorn"></i> News</a>
+                <a href="contact.html" class="nav-item" style="color:var(--primary-color);"><i class="fas fa-map-marker-alt"></i> Contact Us</a>
+            </nav>
+            <!-- Mobile Menu Toggle Button -->
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </header>
+        
+        <!-- Mobile Navigation Overlay -->
+        <div class="mobile-nav-overlay" id="mobileNav">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="academics.html"><i class="fas fa-book-open"></i> Academics</a>
+            <a href="admissions.html"><i class="fas fa-user-graduate"></i> Admissions</a>
+            <a href="news.html"><i class="fas fa-bullhorn"></i> News</a>
+            <a href="contact.html" style="color:var(--primary-color);"><i class="fas fa-map-marker-alt"></i> Contact Us</a>
+        </div>
+
+
+        <!-- HERO SECTION (Contact Page Specific) -->
+        <section class="contact-hero-section">
+            <span class="section-tag" style="color: var(--text-accent);">We're Here to Help</span>
+            <h1 class="hero-title">Get In Touch With Our Team</h1>
+            <p class="hero-subtitle">Whether you have questions about admissions, curriculum, or general inquiries, we look forward to hearing from you.</p>
+        </section>
+
+        <!-- SECTION 1: CONTACT DETAILS & FORM -->
+        <section style="background-color: var(--background-dark);">
+            <span class="section-tag">Inquiry & Location</span>
+            <h2>Send Us a Message or Visit</h2>
+            
+            <div class="contact-grid">
+                
+                <!-- Block 1: Contact Details -->
+                <div class="details-card">
+                    <h3>Direct Contact Information</h3>
+                    <p style="margin-bottom: 30px;">Our administrative office hours are 9:00 AM to 4:00 PM, Monday to Friday.</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-info">
+                            <strong>School Address</strong>
+                            <p>Plot No 45, Knowledge Park II, Gautam Budh Nagar,<br>Noida, Uttar Pradesh 201306</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="contact-info">
+                            <strong>Admissions Hotline</strong>
+                            <p><a href="tel:+919876543210">+91 987 654 3210</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-info">
+                            <strong>General Inquiries</strong>
+                            <p><a href="mailto:info@mountlitzer.edu">info@mountlitzer.edu</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block 2: Inquiry Form -->
+                <div class="form-section">
+                    <h3>Quick Inquiry Form</h3>
+                    <form class="contact-form" onsubmit="event.preventDefault(); showConfirmation();">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                        
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Admissions for Grade 5" required>
+                        
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required placeholder="Tell us about your inquiry..."></textarea>
+                        
+                        <button type="submit" class="submit-button"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Map Placeholder -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.482768298481!2d83.12333047015483!3d23.152573865260056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3989a709f590d48f%3A0x844bfc2d1ccd5804!2sMount%20Litera%20Zee%20School%20Ambikapur!5e0!3m2!1sen!2sin!4v1760601329661!5m2!1sen!2sin" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <!-- Custom Message Box for Form Submission -->
+            <div id="confirmation-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+                <div style="background:var(--surface-dark); color:var(--text-light); padding:30px; border-radius:10px; text-align:center; max-width:90%; width:400px; box-shadow:0 0 20px rgba(0,0,0,0.5);">
+                    <i class="fas fa-check-circle" style="font-size:3em; color:var(--primary-color); margin-bottom:15px;"></i>
+                    <h3 style="color:var(--text-accent); margin-top:0;">Inquiry Sent!</h3>
+                    <p>Thank you for reaching out. We have received your message and will respond within 48 business hours.</p>
+                    <button onclick="document.getElementById('confirmation-modal').style.display='none';" class="submit-button" style="margin-top:15px;">Close</button>
+                </div>
+            </div>
+            
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2024 Mount Litera Zee School. All rights reserved. | Developed with <i class="fas fa-heart"></i></p>
+        </footer>
+
+    </div>
+
+    <script src="js/contact.js"></script>
+
+</body>
+</html>
